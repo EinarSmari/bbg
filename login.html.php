@@ -1,3 +1,4 @@
+<!-- útlitsskjal fyrir loginvefsíðuna -->
 <html>
 	<head>
 		<script type='text/javascript'>
