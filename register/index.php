@@ -53,7 +53,7 @@ if($_POST['password']) {
 			setStat('def',$userID,'5');			
 			setStat('mag',$userID,'5');
 
-			include $_SERVER['DOCUMENT_ROOT'] . '/browsergame/index.php';
+			header('Location:http://www.skolahysing.com/browsergame/main/index.php');
 			exit();
 		}
 	}

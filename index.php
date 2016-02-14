@@ -33,12 +33,12 @@
 				AND password = :password';
 				$s = $pdo->prepare($sql);
 				$s->bindValue(':username', $username);
-				$s->bindValue(':password', $password);
+				$s->bindValue(':password', $securepass);
 				$s->execute();
 			}
 			catch (PDOException $e)
 			{
-				$error = 'Error updating timestamp for user.';
+				$error = 'Error updating timestamp for user.' . $e->getMessage();
 				include $_SERVER['DOCUMENT_ROOT'] . '/include/error.html.php';
 				exit();
 			}
