@@ -1,5 +1,5 @@
 <?php
-//index skjal fyrir armor búðina
+  
 session_start();
 $name = $_SESSION['username'];
 include_once $_SERVER['DOCUMENT_ROOT'] . '/include/dump.include.php';

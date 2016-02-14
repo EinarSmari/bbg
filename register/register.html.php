@@ -5,13 +5,13 @@
 				document.getElementById('username').focus();	
 			}		
 		</script>
-		<title>Login</title>
+		<title>Register</title>
 	</head>
 	<body>
-		<form action='' method='post'>
-			Username: <input type='text' name='username' id='username' /><br />
+		<form method='post' action=''>Username: <input type='text' name='username' id='username' /><br />
 			Password: <input type='password' name='password' /><br />
-			<input type='submit' value='Login' />
+			Confirm Password: <input type='password' name='confirm' /><br />
+			<input type='submit' value='Register!' />
 		</form>
 	</body>
 </html>

@@ -1,13 +1,11 @@
 <?php
-	//index síða fyrir innskráningarsíðuna
 	session_start();
 	include_once $_SERVER['DOCUMENT_ROOT'] . '/include/dump.include.php'; 
 	if($_POST['username']) {
 		include $_SERVER['DOCUMENT_ROOT'] . '/include/db_browsergame.inc.php';
 		$username = $_POST['username'];
 		$password = $_POST['password'];		
-	
-		//byrjar try
+
 		try
 		{
 			$sql = 'SELECT id, username, password FROM users WHERE UPPER(username) = UPPER(:username)';
