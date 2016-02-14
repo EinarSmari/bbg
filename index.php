@@ -1,4 +1,5 @@
 <?php
+	//index síða fyrir innskráningarsíðuna
 	session_start();
 	include_once $_SERVER['DOCUMENT_ROOT'] . '/include/dump.include.php'; 
 	if($_POST['username']) {
